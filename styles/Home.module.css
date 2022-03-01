@@ -1,34 +1,55 @@
 .container {
-  padding: 0 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
   display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 15rem;
+}
+
+
+.logo {
+    padding-top: 4rem;
+    display: flex;
+    max-width: 80vw;
+  }
+
+  @media screen and (min-width: 700px) {
+    .logo {
+      max-width: 700px;
+    }
+  }
+
+.text {
+  display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 
-
 .title {
-  color: #0070f3;
+  color: #000;
   text-decoration: none;
 }
 
-.title:hover,
-.title:focus,
-.title:active {
-  text-decoration: underline;
-}
 
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  letter-spacing: 0.8rem;
+  font-size: 2.5rem;
 }
 
 .title,
@@ -37,31 +58,43 @@
 }
 
 .subtitle {
-  margin: 2rem 0;
+  padding-top: 4rem;
+
+  margin: 0.2rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 1em;
 }
+
 
 .description {
   margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.description p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+
+}
+.description img {
+  filter: invert(85%) sepia(42%) saturate(3656%) hue-rotate(353deg) brightness(106%) contrast(109%);
 }
 
 .footer {
   display: flex;
-  flex: 1;
+  max-height: 1em;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
 }
 
-.footer span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .footer a {
   display: flex;
@@ -69,9 +102,18 @@
   align-items: center;
 }
 
-.logo {
-  margin-left: 0.5rem;
+.icon {
+  margin-left: 1rem;
 }
+
+.whatsapp {
+  filter: invert(83%) sepia(89%) saturate(3795%) hue-rotate(64deg) brightness(86%) contrast(91%);
+}
+
+.disabled {
+  filter: invert(93%) sepia(1%) saturate(31%) hue-rotate(314deg) brightness(94%) contrast(80%);
+}
+
 
 @media (max-width: 600px) {
   .grid {
