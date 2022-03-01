@@ -16,11 +16,9 @@ const Home: NextPage = () => {
           <Image
             alt="Ponte"
             src="/bridge.png"
-            layout='responsive'
-            objectFit='contain'
-            width={500}
-            height={500}
-          />
+            width={3500}
+            height={702}
+            />
         </div>
         <div className={styles.text}>
           <p className={styles.subtitle}>
@@ -31,7 +29,9 @@ const Home: NextPage = () => {
           </h1>
           <span className={styles.description}>
             <Image src="/traffic-cone.svg" alt="Construction Logo" width={30} height={30} />
-            <p>... em construção!</p>
+            <p>... em construção ...</p>
+            <Image src="/traffic-cone.svg" alt="Construction Logo" width={30} height={30} />
+
           </span>
         
         </div>
